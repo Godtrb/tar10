@@ -41,8 +41,8 @@ while(opt!=6):
     match (opt):
         case 1:
             dat=int(input("Ingresa un texto: "))
-            dat.
-            print(invertString(dat))
+            largo=len(dat)
+            print(invertString(dat,largo))
         case 2:
             num = int(input("Ingresa un numero: "))
             if (num <= 0):
@@ -54,11 +54,13 @@ while(opt!=6):
             if (num <= 0):
                 print("Numero no puede ser 0 o negativo")
             else:
-                print(Fibo(num))
-        case 5:
-            text= input("Ingresa un texto: ")
-            text = TextInvert(text)
-            print(text)
+                print(RegCount(num))
+        case 4:
+            num = int(input("Ingresa un numero: "))
+            if (num <= 0):
+                print("Numero no puede ser 0 o negativo")
+            else:
+                print(text)
         case 6:
             num1=int(input("Ingresa la base de la potencia: "))
             if (num1 > 0):
