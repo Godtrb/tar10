@@ -23,11 +23,11 @@ def DecSum(x,lenght):
         return 1
     else:
         return x[lenght-1] + DecSum(x, lenght-1)
-def PotNum(x,y):
-    if y == 0:
+def DigCont(x,cont=1):
+    if x <= 10**cont:
         return 1
     else:
-        return x*PotNum(x,y-1)
+        return cont,DigCont(x,cont+1)
 opt=0
 while(opt!=6):
     print("----------Recusrsiv---------------")
@@ -60,7 +60,8 @@ while(opt!=6):
             if (num <= 0):
                 print("Numero no puede ser 0 o negativo")
             else:
-                print(text)
+                lengt=len(num)
+                print(DecSum(num,lengt))
         case 6:
             num1=int(input("Ingresa la base de la potencia: "))
             if (num1 > 0):
