@@ -30,6 +30,7 @@ def DigCont(x,cont=1):
     else:
         return cont,DigCont(x,cont+1)
 opt=0
+
 while(opt!=6):
     print("----------Recusrsiv---------------")
     print("1. Inv String")
