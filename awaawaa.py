@@ -40,11 +40,9 @@ while(opt!=6):
     opt=int(input(""))
     match (opt):
         case 1:
-            num=int(input("Ingresa un numero: "))
-            if(num<=0):
-                print("Numero no puede ser 0 o negativo")
-            else:
-                print(fact(num))
+            dat=int(input("Ingresa un texto: "))
+            dat.
+            print(invertString(dat))
         case 2:
             num = int(input("Ingresa un numero: "))
             if (num <= 0):
