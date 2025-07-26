@@ -17,6 +17,7 @@ def RegCount(n):
     if n==0:
         return 1
     else:
+        print(f"{n}")
         return RegCount(n-1)
 def DecSum(x,lenght):
     if lenght==0:
@@ -40,7 +41,7 @@ while(opt!=6):
     opt=int(input(""))
     match (opt):
         case 1:
-            dat=int(input("Ingresa un texto: "))
+            dat=input("Ingresa un texto: ")
             largo=len(dat)
             print(invertString(dat,largo))
         case 2:
@@ -62,13 +63,9 @@ while(opt!=6):
             else:
                 lengt=len(num)
                 print(DecSum(num,lengt))
-        case 6:
-            num1=int(input("Ingresa la base de la potencia: "))
+        case 5:
+            num1=int(input("Ingresa un numero: "))
             if (num1 > 0):
-                num2=int(input("Ingresa el exponent de la potencia: "))
-                if (num2 > 0):
-                    print(PotNum(num1,num2))
-                elif (num2 < 0):
-                    print("Numero no puede ser negativo")
+                print(DigCont(num1))
             elif (num1 <= 0):
                 print("Numero no puede ser negativo o 0")
